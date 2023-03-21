@@ -1,0 +1,482 @@
+
+/* общие */
+:root{
+ --main_color_light:white ;
+ --main_color_dark: #050c03;
+ --logo_color: 	#5b9f0b;
+ --accent_color: #020600;
+--grey_color:#f0f0f0;
+
+}
+body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'sans-serif' ;
+    background-color: var(--main_color_light) ;
+    z-index: 2;
+
+
+}
+/* цветовая схема */
+.color_main_light{
+    background-color:var(--main_color_light);
+    color:var(--main_color_dark) ;
+}
+.color_main_dark{
+    background-color:var(--main_color_dark);
+    color: var(--main_color_light);
+}
+.color_logo{
+    background-color: var(--logo_color) ;
+    color: var(--main_color_light);
+}
+.color_accent , .but a{
+    background-color:var(--accent_color) ;
+    color: var(--main_color_light);
+}
+.black{
+    background-color: black;
+    color: white;
+}
+.grey{
+    background-color: var(--grey_color);
+    color: var(--main_color_dark);
+}
+/* ////////////////////////////////////////////////// */
+
+
+
+    /* размеры текста */
+
+.text_mar{
+    margin: 0 120px 0 60px;
+
+}
+h1{
+   font-weight: bold ;
+   font-size: 50px;
+    letter-spacing:0.4em;
+    text-align: center;
+}
+h2{
+    font-weight: bold ;
+    font-size: 34px;
+    letter-spacing:0.2em;
+     line-height: 130%;
+    margin: 50px 60px 50px 60px;
+ }
+ h3{
+
+    font-size: 20px;
+    margin: 40px 60px 40px 60px;
+
+ }
+ h4{
+    font-weight: 100 bold;
+    font-size: 35px;
+    margin: 10px;
+    line-height: 160%;
+    text-align: center;
+
+ }
+
+p{ position: relative;
+    font: 19px normal;
+    line-height: 145%;
+    margin: 0 60px 20px 60px;
+}
+.important_text{
+    font: 22px bold;
+    line-height: 140%;
+}
+.noimportant_text{
+    font: 16px normal;
+    line-height: 130%;
+}
+.minimal_text{
+    font: 13px normal;
+    line-height: 130%;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+/*все блоки */
+.block{
+    padding: 30px 0;
+}
+/* /////////////////////////////////////////////////////// */
+
+
+/* меню */
+header{
+    background-color: rgba(0,0,0, 0.5);
+    color: white;
+    position: fixed;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+    width: 100%;
+    padding: 10px 20px;
+     z-index: 10;
+
+
+}
+
+
+ menu ul {
+    display: flex;
+
+}
+menu ul li{
+    margin-right: 5vw;
+  list-style-type: none;
+
+}
+
+
+menu ul li a{
+
+}
+/* главная страница*/
+
+
+.main{
+    height:100vh;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url(../img/F3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+.mainText h3{
+    display: inline;
+    position: relative;
+    left:calc(50% + 50px);
+}
+
+/* ///////////////////////////////// кнопки */
+.X_but{
+    display: none;
+}
+.main_but a{
+    position: relative;
+    top: 10vh;
+    font-size: 1.8em;
+}
+
+.but a{
+    margin: 10px;
+     min-width:40px ;
+     text-align: center;
+
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    border-radius: 29px;
+    transition: background-color 1s ease-out 0.2s, color 1s ease-out 0.2s;
+    padding: 13px 30px;
+    opacity: 0.5;
+}
+.but a:hover{
+
+    background-color: white;
+    color:black;
+    transition: background-color 1s ease-out 0.2s, color 1s ease-out 0.2s;
+
+
+}
+.buy .but  {
+    margin-top: 50px;
+}
+
+/* страница описания */
+
+.company{
+     text-align: center;
+     background-color: #f0f0f0;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+.company h2{
+    display: inline;
+    padding: 0 10px 15px 10px ;
+    border-bottom: 1px solid;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+.aboutH{
+    display: flex;
+    flex-direction: column;
+}
+.aboutS{
+
+}
+
+.molecule_img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+.Chlorofill_img img{
+    max-width: 30vw;
+}
+.molecule_img img{
+    max-width: 20vw;
+    margin: 20px;
+}
+
+
+.description{
+    margin-top: 100px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.H_or_G_text{
+}
+.list{
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.list ul li{
+margin-top: 10px;
+}
+.Chlorofill_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* max-height: 200px; */
+}
+/* страница покупки */
+.buy{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+.buy h2{
+
+}
+
+.buy_options{
+
+
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.frame{
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+width: 30vw;
+padding: 25px;
+    display: flex;
+   flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+
+
+ .Registr h1{
+
+    opacity: 0.5;
+    margin:0;
+
+}
+.frame ul li{
+    margin-top: 10px;
+}
+
+
+
+footer {
+
+     text-align: center;
+
+}
+
+footer .icon ul{
+
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    width: 50vw;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+footer a img{
+ max-width: 40px;
+}
+.privat{
+    width: 100%;
+
+}
+.privat p {
+    margin: 10px 0;
+    text-align: center;
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+ 
+    .main{
+        background-image: url(../img/F3_1.jpg); 
+        background-size: 100%;
+    }
+
+}
+
+@media screen and (max-width:800px) {
+  header{
+    /* display: flex; */
+   align-items: center;
+   justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    padding: 0;
+    transition: 2s;
+
+  }
+  .header_de{
+    transform: translateY(-90%);
+    transition: 2s;
+  }
+  menu{
+    padding-left: 0;
+  }
+    menu ul{
+        padding-left: 0;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+   }
+   menu ul li{
+       margin: 20px 0 0 0;
+       text-align: center;
+   }
+    .buy_options{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .frame{
+        width: 80vw;
+    }
+    .X_but{
+        display: flex;
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        bottom: -25px;
+        background-color: #020600;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+       z-index: 1;
+    
+    }
+   
+    .X_but span{
+        /* position: relative;
+        top: 24px; 
+        left:3px ; */
+        display: block;
+        background-color: #f0f0f0;
+      
+        width:44px ;
+        height: 2px;
+        margin: 5px;
+        transition: 1s;
+        
+    }
+    .X_active_1{
+        transform: translateY(6px) rotate(45deg) ;
+        margin: 0;
+        transition: 1s;
+
+    }
+   
+    .X_active_2{
+        transform:translateY(-6px) rotate(-45deg)   ;
+        margin: 0;
+        transition: 1s;
+
+    }
+    .molecule_img{
+        display: none;
+    }
+   .description{
+    justify-content: space-between;
+   }
+       
+    }
+    .H_or_G {
+    padding: 0;
+
+    }
+    .H_or_G_text{
+        width: 100%;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
